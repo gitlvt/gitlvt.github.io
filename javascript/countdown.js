@@ -1,5 +1,5 @@
 
-var timeleft = 7;
+var timeleft = 5;
     var downloadTimer = setInterval(function(){
     timeleft--;
     document.getElementById("countdowntimer").textContent = timeleft;
