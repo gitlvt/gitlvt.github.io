@@ -34,7 +34,18 @@
 
       <h3 style="color:blue" >OR <a href="https://sourcecodec.net/downloads/code-do-an-web-ban-dien-thoai-smart-phone-store-voi-nhieu-tinh-nang/">click here</a></h3>
       
-      <script type="text/javascript" src="https://gitlvt.github.io/javascript/countdown.js"></script>
+     
+        <script type="text/javascript">
+  	
+var timeleft = 7;
+    var downloadTimer = setInterval(function(){
+    timeleft--;
+    document.getElementById("countdowntimer").textContent = timeleft;
+    if(timeleft <= 0)
+        clearInterval(downloadTimer);
+    },1000);
+  	
+  </script>
       
 </body>
 </html>
