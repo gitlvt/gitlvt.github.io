@@ -19,13 +19,21 @@
             window.location.href = 'https://sourcecodec.net/downloads/template-website-dang-ky-data-3g-4g-cho-viettel-mang-di-dong-khac-full-chuc-nang-blogspot/';
          }, 7000);
       </script>
-      <h2>Web page redirects after <span id="countdowntimer">7 </span> seconds.</h2>
+    
       
       
-       <p> The download will begin in <span id="countdowntimer">7</span> Seconds</p>
+      
+    <p> The download will begin in <span id="countdowntimer">10 </span> Seconds</p>
 
-      
-      <script type="text/javascript" scr="https://gitlvt.github.io/javascript/countdown.js"></script>
+<script type="text/javascript">
+    var timeleft = 10;
+    var downloadTimer = setInterval(function(){
+    timeleft--;
+    document.getElementById("countdowntimer").textContent = timeleft;
+    if(timeleft <= 0)
+        clearInterval(downloadTimer);
+    },1000);
+</script>
 
 </body>
 </html>
